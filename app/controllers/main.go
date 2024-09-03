@@ -9,6 +9,7 @@ import (
 )
 
 func WorkExperience(c *fiber.Ctx) error {
+	// Static data here...
 	var workExperiences []Model.WorkExperience = []Model.WorkExperience{
 		{
 			Name:     "Rally the Locals",
@@ -28,9 +29,39 @@ func WorkExperience(c *fiber.Ctx) error {
 			},
 			TechStacks: []Model.TechStack{
 				{
-					Name: "Test",
-					Icon: "Test",
-					Link: "Test",
+					Name: "Laravel",
+					Icon: "devicon:laravel",
+					Link: "https://laravel.com/",
+				},
+				{
+					Name: "NextJS",
+					Icon: "devicon:nextjs",
+					Link: "https://nextjs.org/",
+				},
+				{
+					Name: "ExpressJS",
+					Icon: "skill-icons:expressjs-light",
+					Link: "https://expressjs.com/",
+				}
+				{
+					Name: "Tailwind",
+					Icon: "devicon:tailwindcss",
+					Link: "https://tailwindcss.com",
+				},
+				{
+					Name: "Stripe",
+					Icon: "logos:stripe",
+					Link: "https://stripe.com/",
+				},
+				{
+					Name: "Docker",
+					Icon: "logos:docker-icon",
+					Link: "https://docker.com/",
+				},
+				{
+					Name: "Atlassian Suite",
+					Icon: "logos:atlassian",
+					Link: "https://atlassian.com/",
 				},
 			},
 		},
@@ -49,9 +80,24 @@ func WorkExperience(c *fiber.Ctx) error {
 			},
 			TechStacks: []Model.TechStack{
 				{
-					Name: "Test",
-					Icon: "Test",
-					Link: "Test",
+					Name: "CodeIgniter",
+					Icon: "logos:codeigniter-icon",
+					Link: "https://codeigniter.com",
+				},
+				{
+					Name: "Stripe",
+					Icon: "logos:stripe",
+					Link: "https://stripe.com/",
+				},
+				{
+					Name: "Bootstrap",
+					Icon: "devicon:bootstrap",
+					Link: "http://getbootstrap.com/",
+				},
+				{
+					Name: "Jira",
+					Icon: "logos:jira",
+					Link: "https://www.atlassian.com/software/jira",
 				},
 			},
 		},
@@ -69,11 +115,28 @@ func WorkExperience(c *fiber.Ctx) error {
 				"Developed a MOOC (Massive Open Online Course) for ITS using Laravel and Bootstrap",
 				"Designed the database and the models to accommodate the scalable MOOC application",
 			},
+			TechStacks: []Model.TechStack{
+				{
+					Name: "Laravel",
+					Icon: "devicon:laravel",
+					Link: "https://laravel.com/",
+				},
+				{
+					Name: "Microsoft SQL Server",
+					Icon: "devicon:microsoftsqlserver",
+					Link: "https://www.microsoft.com/en-us/sql-server/",
+				},
+				{
+					Name: "Bootstrap",
+					Icon: "devicon:bootstrap",
+					Link: "http://getbootstrap.com/",
+				},
+			},
 		},
 	}
 
 	return c.JSON(fiber.Map{
-		"status": "success",
-		"data":   workExperiences,
+		"success": true,
+		"data":    workExperiences,
 	})
 }
