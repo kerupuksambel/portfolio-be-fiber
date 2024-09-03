@@ -13,6 +13,14 @@ type WorkExperience struct {
 	TechStacks   []TechStack `json:"tech_stacks"`
 }
 
+type Project struct {
+	Name        string      `json:"name"`
+	Summary     string      `json:"summary"`
+	Description string      `json:"description"`
+	Image       string      `json:"image_url"`
+	TechStacks  []TechStack `json:"tech_stacks"`
+}
+
 type Date struct {
 	Start time.Time   `json:"start"`
 	End   interface{} `json:"end"`

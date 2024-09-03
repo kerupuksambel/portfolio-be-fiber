@@ -9,6 +9,10 @@ import (
 func Routes(app *fiber.App) {
 	api := app.Group("/api")
 
-	// Work experience route
+	// Routes here
 	api.Get("/works", controllers.WorkExperience)
+	api.Get("/projects", controllers.Projects)
+
+	// Static serve
+	app.Static("/public", "./public")
 }

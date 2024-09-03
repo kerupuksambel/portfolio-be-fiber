@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 
 	"github.com/kerupuksambel/portfolio-be/routes"
 )
@@ -11,9 +12,11 @@ import (
 func main() {
 	app := fiber.New()
 
-	routes.Routes(app)
+	app.Use(cors.New(cors.Config{
+		AllowOrigins: "*", // Allow all origins
+	}))
 
-	app.Static("/public", "./public")
+	routes.Routes(app)
 
 	app.Listen(":6060")
 	fmt.Printf("Listening on port 6060")
