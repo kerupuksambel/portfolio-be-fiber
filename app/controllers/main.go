@@ -42,7 +42,7 @@ func WorkExperience(c *fiber.Ctx) error {
 					Name: "ExpressJS",
 					Icon: "skill-icons:expressjs-light",
 					Link: "https://expressjs.com/",
-				}
+				},
 				{
 					Name: "Tailwind",
 					Icon: "devicon:tailwindcss",
