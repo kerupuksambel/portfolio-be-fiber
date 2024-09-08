@@ -147,8 +147,8 @@ func Projects(c *fiber.Ctx) error {
 		{
 			Name:        "Rally the Locals",
 			Summary:     "A front-site for Rally the Locals, a Canadian advertising agency for local businesses.",
-			Description: "A front-site for Rally the Locals, a Canadian advertising agency for local businesses built with ReactJS + NextJS, Tailwind, and TypeScript as its frontend, and Laravel as its backend. In this project, as a full-stack developer, my contribution mostly positioned more on the front-end job, including Figma design slicing, responsive page designing, and API fetching. This project is my first production-ready project with ReactJS and NextJS, so my biggest obstacle in this project is to adapt with production-grade NextJS + Typescript development, and with adapting things based on past projects and optimizing them, I could withstand the problem and delivering production-grade deliverables.",
-			Image:       "public/rtl.png",
+			Description: "Built with ReactJS + NextJS, Tailwind, and TypeScript as its frontend, and Laravel as its backend.",
+			Image:       "static/rtl.png",
 			TechStacks: []Model.TechStack{
 				{
 					Name: "Laravel",
@@ -176,7 +176,7 @@ func Projects(c *fiber.Ctx) error {
 			Name:        "Schematics 2019 Landing Page",
 			Description: "A website dedicated for Schematics 2019, an internal event by Informatics ITS.",
 			Summary:     "A website dedicated for Schematics 2019, an internal event by Informatics ITS.",
-			Image:       "public/schematics.png",
+			Image:       "static/schematics.png",
 			TechStacks: []Model.TechStack{
 				{
 					Name: "ReactJS",
@@ -194,7 +194,7 @@ func Projects(c *fiber.Ctx) error {
 			Name:        "Portfolio Site",
 			Description: "A bit meta, but a website built to showcase the works I've done.",
 			Summary:     "A bit meta, but a website built to showcase the works I've done.",
-			Image:       "public/portfolio.png",
+			Image:       "static/portfolio.png",
 			TechStacks: []Model.TechStack{
 				{
 					Name: "ReactJS",
@@ -210,6 +210,11 @@ func Projects(c *fiber.Ctx) error {
 					Name: "Vercel",
 					Icon: "devicon:vercel",
 					Link: "https://vercel.com",
+				},
+				{
+					Name: "Golang",
+					Icon: "devicon:golang",
+					Link: "https://golang.com",
 				},
 			},
 		},
