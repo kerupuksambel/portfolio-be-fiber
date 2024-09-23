@@ -4,12 +4,8 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors"
-
+	"github.com/kerupuksambel/portfolio-be/app"
 	"github.com/kerupuksambel/portfolio-be/internal/database"
-	// "github.com/kerupuksambel/portfolio-be/internal/database/migration"
-	"github.com/kerupuksambel/portfolio-be/routes"
 )
 
 func main() {
@@ -28,14 +24,8 @@ func main() {
 		database.Migrate()
 	}
 
-	app := fiber.New()
+	server := app.Init()
 
-	app.Use(cors.New(cors.Config{
-		AllowOrigins: "*", // Allow all origins
-	}))
-
-	routes.Routes(app)
-
-	app.Listen(":6060")
+	server.Listen(":6060")
 	fmt.Printf("Listening on port 6060")
 }
