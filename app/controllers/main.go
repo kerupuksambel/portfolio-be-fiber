@@ -240,7 +240,7 @@ func Projects(c *fiber.Ctx) error {
 			Name:        "Unique Brazillian Dairy",
 			Description: "I and my team worked for the Unique Brazillian Dairy website revamp, a law firm based on Winnipeg, Canada.",
 			Summary:     "My works here is mostly revolved on the Unique Brazilian Dairy website revamp, along with the assistance for the frontend works.",
-			Image:       "static/cs.png",
+			Image:       "static/ubd.png",
 			TechStacks: []Model.TechStack{
 				{
 					Name: "Laravel",
