@@ -218,6 +218,42 @@ func Projects(c *fiber.Ctx) error {
 				},
 			},
 		},
+		{
+			Name:        "Cochrane Sinclair",
+			Description: "I and my team worked for the Cochrane Sinclair website revamp, a law firm based on Winnipeg, Canada.",
+			Summary:     "My works here is on the backend of the Cochrane Sinclair website revamp, along with the assistance for the frontend works.",
+			Image:       "static/cs.png",
+			TechStacks: []Model.TechStack{
+				{
+					Name: "Laravel",
+					Icon: "devicon:laravel",
+					Link: "https://golang.com",
+				},
+				{
+					Name: "NextJS",
+					Icon: "devicon:nextjs",
+					Link: "https://nextjs.com",
+				},
+			},
+		},
+		{
+			Name:        "Unique Brazillian Dairy",
+			Description: "I and my team worked for the Unique Brazillian Dairy website revamp, a law firm based on Winnipeg, Canada.",
+			Summary:     "My works here is mostly revolved on the Unique Brazilian Dairy website revamp, along with the assistance for the frontend works.",
+			Image:       "static/cs.png",
+			TechStacks: []Model.TechStack{
+				{
+					Name: "Laravel",
+					Icon: "devicon:laravel",
+					Link: "https://golang.com",
+				},
+				{
+					Name: "NextJS",
+					Icon: "devicon:nextjs",
+					Link: "https://nextjs.com",
+				},
+			},
+		},
 	}
 
 	return c.JSON(fiber.Map{
